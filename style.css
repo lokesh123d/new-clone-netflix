@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("backgrondimg.jpg");
+    color: white; 
+    background-repeat: no-repeat;
+}
+
+/* Header */
+#mainhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5vw;
+}
+
+#logo img {
+  height: 6rem;
+  width: 8rem;
+}
+#righthead{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+#lang select,
+#langlast {
+  height: 2.5rem;
+  width: 10rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+}
+
+#signup button {
+  width: 9rem;
+  height: 2.5rem;
+  background-color: #db1414;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Announcement Section */
+#announcement {
+  margin-top: 12vh;
+  text-align: center;
+  padding: 2rem 10vw;
+}
+
+#announcement h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#announcement h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+ #announcement p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.input {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#emailinput,
+#email2 {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 2.5rem;
+  width: 280px;
+  color: white;
+  padding: 0.5rem;
+  border:2px solid white;
+  border-radius: 0.25rem;
+}
+
+#getstarted,
+#getstarted2 {
+  background-color: #db1414;
+  border: none;
+  height: 2.5rem;
+  width: 8rem;
+  font-size: 1rem;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  padding: 4rem 5vw;
+}
+
+.trending h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.imgset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.imgoftreand {
+  width: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imgoftreand:hover {
+  transform: scale(1.1);
+}
+
+.reasontojoin {
+  margin-top: 4rem;
+}
+
+.reasondivset {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+
+}
+
+.morereasonset {
+  background: linear-gradient(to bottom, #0f0f2d, #1b0524);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 300px;
+  height: 40vh;
+}
+
+.headingofreason {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.morereasonset img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto 0 auto;
+}
+
+.questionset {
+  max-width: 900px;
+  margin: 5rem auto;
+}
+
+.questionset h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.faq button {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: #1e1e1e;
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.faq button:hover {
+  background-color: #333;
+}
+
+.inputwatchdiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.watch p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
+}
+
+.question3 {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  line-height: 2;
+}
+
+.last {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+.last p{
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:400px){
+    #announcement {
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+    }
+    #announcement h1{
+font-size: 40px;
+    }
+    
+}
+
+@media (max-width:1200px){
+    .reasondivset{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:500px){
+  #righthead{
+display: flex;
+flex-direction: column;
+gap: 1em;
+  }
+  #lang select{
+    height: 2em;
+    width: 6em;
+  }
+  #signup button{
+    height: 2em;
+    width: 6em;
+  }
+  
+}
+@media (max-width:462px){
+  .imgset img{
+    margin-bottom: -8vh;
+  }
+}
